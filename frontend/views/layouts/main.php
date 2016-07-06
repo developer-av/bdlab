@@ -88,7 +88,7 @@ AppAsset::register($this);
                                 </div>
                                 <div class="col-md-6">
                                     Мы в социальных сетях: <br>
-                                    <a href="#"><img src="/img/VK.png" alt=""></a><a href="#"><img src="/img/facebook.png" alt=""></a>
+                                    <a href="https://vk.com/lab4biz"><img src="/img/VK.png" alt=""></a><a href="https://www.facebook.com/laboratory4biz"><img src="/img/facebook.png" alt=""></a>
                                 </div>
                             </div>
                             <br>
