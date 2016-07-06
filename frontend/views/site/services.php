@@ -28,7 +28,7 @@ $this->title = 'My Yii Application';
                             ?>
                         </ul>
                     </div>
-                    <?= Html::a('Подробнее', ['sevice-inner', 'id' => $model['id']], ['class' => 'btn']) ?>
+                    <?= Html::a('Подробнее', ['service-inner', 'id' => $model['id']], ['class' => 'btn']) ?>
                 </div>
             </div>
             <?= ($i % 4 == 3 ? '</div>' . (count($models) - $i > 4 ? '<hr/>' : '') : '') ?>

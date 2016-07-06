@@ -5,21 +5,20 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "services_property".
+ * This is the model class for table "slider".
  *
  * @property integer $id
- * @property integer $services_id
- * @property integer $sort_order
+ * @property string $title
  * @property string $text
  */
-class ServicesProperty extends \yii\db\ActiveRecord
+class Slider extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'services_property';
+        return 'slider';
     }
 
     /**
@@ -28,9 +27,9 @@ class ServicesProperty extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['services_id', 'sort_order', 'text'], 'required'],
-            [['services_id', 'sort_order'], 'integer'],
-            [['text'], 'string', 'max' => 255],
+            [['title', 'text'], 'required'],
+            [['text'], 'string'],
+            [['title'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,7 +40,7 @@ class ServicesProperty extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'sort_order' => 'Сортировка',
+            'title' => 'Заголовок',
             'text' => 'Текст',
         ];
     }

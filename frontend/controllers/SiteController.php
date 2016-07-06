@@ -46,9 +46,9 @@ class SiteController extends Controller {
      *
      * @return mixed
      */
-    public function actionSeviceInner($id) {
+    public function actionServiceInner($id) {
         $model = Services::find()->with('servicesProperty')->asArray()->where($id)->one();
-        return $this->render('sevice-inner', ['model' => $model]);
+        return $this->render('service-inner', ['model' => $model]);
     }
 
 }

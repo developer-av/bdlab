@@ -83,8 +83,8 @@ class Services extends \yii\db\ActiveRecord {
     public function attributeLabels() {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'text' => 'Text',
+            'title' => 'Заголовок',
+            'text' => 'Текст',
         ];
     }
 

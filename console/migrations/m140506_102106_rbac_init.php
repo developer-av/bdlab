@@ -155,6 +155,7 @@ class m140506_102106_rbac_init extends \yii\db\Migration {
             '/about/*',
             '/blog/*',
             '/elfinder/*',
+            '/slider/*',
         ];
 
         foreach ($moderatorRoutes as $moderatorRoute) {

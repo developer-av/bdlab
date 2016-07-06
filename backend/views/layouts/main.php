@@ -37,9 +37,11 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'О нас', 'url' => ['/about/default/index']],
+        ['label' => 'Услуги', 'url' => ['/services/index']],
         ['label' => 'Отзывы', 'url' => ['/feedback/default/index']],
         ['label' => 'Блог', 'url' => ['/blog/default/index']],
         ['label' => 'Клиенты', 'url' => ['/clients/default/index']],
+        ['label' => 'Слайдер', 'url' => ['/slider/index']],
         [
             'label' => 'RBAC',
             'items' => [

@@ -43,7 +43,7 @@ $this->registerJs('
     <?= $form->field($model, 'y2', ['options' => ['style' => 'display: none;']])->hiddenInput(['id' => 'y2Cord'])->label(false); ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
