@@ -1,0 +1,1 @@
+composer update && ./init && ./yii migrate && ./yii migrate --migrationPath=@vendor/developer-av/yii2-comments/migrations && ./yii migrate --migrationPath=@common/modules/about/migrations && ./yii migrate --migrationPath=@common/modules/clients/migrations && ./yii migrate --migrationPath=@vendor/developer-av/yii2-blog/migrations
