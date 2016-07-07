@@ -825,7 +825,7 @@ header h2 {
   background: url(/img/arrows/arrow-left-gray.png) no-repeat center;
   width: 20px;
   height: 100%;
-  left: 30px;
+  left: 10px;
   cursor: pointer;
 }
 .blog-recover .blog-selector .prev-section:hover:before {
@@ -840,7 +840,7 @@ header h2 {
   background: url(/img/arrows/arrow-right-gray.png) no-repeat center;
   width: 20px;
   height: 100%;
-  right: 30px;
+  right: 10px;
   cursor: pointer;
 }
 .blog-recover .blog-selector .next-section:hover:before {
@@ -934,6 +934,17 @@ header h2 {
 .client-slider.slider .carousel-inner {
   height: 100%;
 }
+
+.carousel-caption
+{
+    text-shadow: none;
+}
+
+.btn-primary
+{
+    border: none;
+}
+
 .client-slider.slider .carousel-caption {
   background: white;
   text-shadow: none;
@@ -1056,4 +1067,23 @@ header h2 {
   background: -webkit-linear-gradient(left, #42872a 0%, #53a037 100%);
   background: linear-gradient(to right, #42872a 0%, #53a037 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42872a', endColorstr='#53a037',GradientType=1 );
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus
+{
+    background-color: transparent;
+    outline: none;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }

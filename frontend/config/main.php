@@ -8,6 +8,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'name' => 'Лаборатория развития бизнеса',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'user' => [

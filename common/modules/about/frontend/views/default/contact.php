@@ -41,4 +41,15 @@ use app\components\ContactWidget;
     </div>
 </section>
 
-<section class='map'></section>
+<section class='map' style="position: relative;">
+    <div style="width: 100%; height: 100%; position: absolute; background-color: #000; opacity: 0.5;"></div>
+    <div style="position: absolute; padding: 30px; top: 20%; left: 30%; background-color: #F1F1F1;">
+        <h3 style="font-weight: bold; margin-bottom: 30px;">Киев</h3>
+        <h4 style="color: #A7A7A7;">
+        ул. Ивана Пуля 2,<br/>
+        Киев, 84936<br/>
+        3 этаж, 10 офис
+        </h4>
+        <h2 style="color: #76B55D;">407.296.4100</h2>
+    </div>
+</section>
