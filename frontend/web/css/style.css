@@ -1076,14 +1076,14 @@ header h2 {
     outline: none;
 }
 
-.row {
+.blog-selector .row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
-.row > [class*='col-'] {
+.blog-selector .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
 }
