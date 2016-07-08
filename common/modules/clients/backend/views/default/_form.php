@@ -31,6 +31,8 @@ $this->registerJs('
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'file', ['options' => ['style' => 'display: none;'], 'selectors' => ['input' => '#uploadimage']])->fileInput(['id' => 'uploadimage'])->label(false) ?>
 
     <?= $form->field($model, 'x1', ['options' => ['style' => 'display: none;']])->hiddenInput(['id' => 'x1Cord'])->label(false); ?>

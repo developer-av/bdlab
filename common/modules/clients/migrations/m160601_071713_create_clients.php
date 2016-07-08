@@ -17,6 +17,7 @@ class m160601_071713_create_clients extends Migration {
         $this->createTable('clients', [
             'id' => "MEDIUMINT(8)  NOT NULL AUTO_INCREMENT PRIMARY KEY",
             'title' => "VARCHAR(255)  NOT NULL",
+            'url' => "VARCHAR(255)  NOT NULL",
             'photo' => "VARCHAR(255)  NOT NULL",
         ], $tableOptions);
     }

@@ -42,6 +42,8 @@ $this->registerJs('
 
     <?= $form->field($model, 'facebook')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'instagram')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'file', ['options' => ['style' => 'display: none;'], 'selectors' => ['input' => '#uploadimage']])->fileInput(['id' => 'uploadimage'])->label(false) ?>

@@ -16,6 +16,7 @@ use Gregwar\Image\Image;
  * @property string $vk
  * @property string $facebook
  * @property string $phone
+ * @property string $instagram
  */
 class About extends \yii\db\ActiveRecord {
 
@@ -58,7 +59,7 @@ class About extends \yii\db\ActiveRecord {
             [['name', 'about', 'email', 'vk', 'facebook', 'phone'], 'required', 'on' => ['create', 'update']],
             [['about'], 'string', 'on' => ['create', 'update']],
             [['name', 'email', 'vk', 'facebook'], 'string', 'max' => 255, 'on' => ['create', 'update']],
-            [['x1', 'y1', 'x2', 'y2'], 'safe', 'on' => ['create', 'update']],
+            [['x1', 'y1', 'x2', 'y2', 'instagram'], 'safe', 'on' => ['create', 'update']],
             [
                 ['file'],
                 'image',
@@ -83,8 +84,8 @@ class About extends \yii\db\ActiveRecord {
 
     public function scenarios() {
         return [
-            'create' => ['name', 'about', 'email', 'vk', 'facebook', 'x1', 'y1', 'x2', 'y2', 'phone', 'file'],
-            'update' => ['name', 'about', 'email', 'vk', 'facebook', 'x1', 'y1', 'x2', 'y2', 'phone', 'file'],
+            'create' => ['name', 'about', 'email', 'vk', 'facebook', 'x1', 'y1', 'x2', 'y2', 'phone', 'file', 'instagram'],
+            'update' => ['name', 'about', 'email', 'vk', 'facebook', 'x1', 'y1', 'x2', 'y2', 'phone', 'file', 'instagram'],
         ];
     }
 
@@ -100,6 +101,7 @@ class About extends \yii\db\ActiveRecord {
             'vk' => 'VK',
             'facebook' => 'Facebook',
             'phone' => 'Телефон',
+            'instagram' => 'Инстаграм',
         ];
     }
 

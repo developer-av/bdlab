@@ -21,6 +21,7 @@ class m160614_140358_create_about extends Migration
 			'email' => "VARCHAR(255)  NOT NULL",
 			'phone' => "VARCHAR(255)  NOT NULL",
 			'vk' => "VARCHAR(255)  NOT NULL",
+			'instagram' => "VARCHAR(255)",
 			'facebook' => "VARCHAR(255)  NOT NULL",
 		], $tableOptions);
 	}

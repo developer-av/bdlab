@@ -16,7 +16,7 @@ use yii\helpers\Html;
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-5">
-                            <div class="clients-logo"><?= Html::img('/' . \yii::$app->params['clientsPath'] . $model->photo) ?></div>
+                            <div class="clients-logo"><a href="<?= $model->url ?>" target="_blank"><?= Html::img('/' . \yii::$app->params['clientsPath'] . $model->photo) ?></a></div>
                         </div>
                         <div class="col-md-7">
                             <div class="clients-description">

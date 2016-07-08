@@ -52,7 +52,7 @@ class Clients extends \yii\db\ActiveRecord {
         return [
             [['title'], 'required', 'on' => ['create', 'update']],
             [['title'], 'string', 'max' => 255, 'on' => ['create', 'update']],
-            [['x1', 'y1', 'x2', 'y2'], 'safe', 'on' => ['create', 'update']],
+            [['x1', 'y1', 'x2', 'y2', 'url'], 'safe', 'on' => ['create', 'update']],
             [
                 ['file'],
                 'image',
@@ -77,8 +77,8 @@ class Clients extends \yii\db\ActiveRecord {
 
     public function scenarios() {
         return [
-            'create' => ['title', 'x1', 'y1', 'x2', 'y2', 'file'],
-            'update' => ['title', 'x1', 'y1', 'x2', 'y2', 'file'],
+            'create' => ['title', 'x1', 'y1', 'x2', 'y2', 'file', 'url'],
+            'update' => ['title', 'x1', 'y1', 'x2', 'y2', 'file', 'url'],
         ];
     }
 
@@ -90,6 +90,7 @@ class Clients extends \yii\db\ActiveRecord {
             'id' => 'ID',
             'title' => 'Название',
             'photo' => 'Photo',
+            'url' => 'Ссылка',
         ];
     }
 
