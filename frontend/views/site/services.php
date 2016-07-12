@@ -3,7 +3,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'My Yii Application';
+$this->title = 'Услуги';
 ?>
 
 <section class="services-list">

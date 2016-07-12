@@ -4,7 +4,7 @@
 
 use app\components\SliderWidget;
 
-$this->title = 'My Yii Application';
+$this->title = '';
 ?>
 
             <?= SliderWidget::widget() ?>

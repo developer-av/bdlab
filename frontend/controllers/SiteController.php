@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use yii\web\Controller;
 use common\models\Services;
+use yii\web\NotFoundHttpException;
 
 /**
  * Site controller
@@ -47,7 +48,11 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionServiceInner($id) {
-        $model = Services::find()->with('servicesProperty')->asArray()->where($id)->one();
+        $model = Services::find()->with('servicesProperty')->asArray()->where(['id' => $id])->one();
+        if($model == NULL)
+        {
+            throw new NotFoundHttpException;
+        }
         return $this->render('service-inner', ['model' => $model]);
     }
 

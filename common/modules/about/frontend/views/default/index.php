@@ -3,6 +3,7 @@
 /* @var $model common\modules\about\common\models\About */
 
 use yii\helpers\Html;
+$this->title = 'О нас';
 ?>
 
 <section class="about-description">
@@ -27,7 +28,7 @@ use yii\helpers\Html;
                                 <li><i class="sprite sprite-contact_email"></i><a href="mailto:<?= $model->email ?>" target="_top"><?= $model->email ?></a></li>
                                 <li><i class="sprite sprite-contact_vk"></i><a href="https://new.vk.com/<?= $model->vk ?>" target="_blank"><?= $model->vk ?></a></li>
                                 <li><i class="sprite sprite-contact_fb"></i><a href="https://www.facebook.com/<?= $model->facebook ?>" target="_blank"><?= $model->facebook ?></a></li>
-                                <?= (!empty($model->instagram)? '<li><i class="sprite sprite-contact_fb"></i><a href="https://www.instagram.com/'.$model->instagram.'" target="_blank">'.$model->instagram.'</li></a>' : ''); ?>
+                                <?= (!empty($model->instagram)? '<li><i class="sprite sprite-contact_in"></i><a href="https://www.instagram.com/'.$model->instagram.'" target="_blank">'.$model->instagram.'</li></a>' : ''); ?>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +44,7 @@ use yii\helpers\Html;
                                 <li><i class="sprite sprite-contact_email"></i><a href="mailto:<?= $model->email ?>" target="_top"><?= $model->email ?></a></li>
                                 <li><i class="sprite sprite-contact_vk"></i><a href="https://new.vk.com/<?= $model->vk ?>" target="_blank"><?= $model->vk ?></a></li>
                                 <li><i class="sprite sprite-contact_fb"></i><a href="https://www.facebook.com/<?= $model->facebook ?>" target="_blank"><?= $model->facebook ?></a></li>
-                                <?= (!empty($model->instagram)? '<li><i class="sprite sprite-contact_fb"></i><a href="https://www.instagram.com/'.$model->instagram.'" target="_blank">'.$model->instagram.'</li></a>' : ''); ?>
+                                <?= (!empty($model->instagram)? '<li><i class="sprite sprite-contact_in"></i><a href="https://www.instagram.com/'.$model->instagram.'" target="_blank">'.$model->instagram.'</li></a>' : ''); ?>
                             </ul>
                         </div>
                         <div class="col-md-4 vladimir-description">

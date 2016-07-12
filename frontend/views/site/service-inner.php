@@ -1,7 +1,7 @@
 <?php
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Услуги - '.$model['title'];
 
 use yii\helpers\Html;
 ?>

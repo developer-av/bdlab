@@ -46,10 +46,10 @@ use app\components\ContactWidget;
     <div style="position: absolute; padding: 30px; top: 20%; left: 30%; background-color: #F1F1F1;">
         <h3 style="font-weight: bold; margin-bottom: 30px;">Киев</h3>
         <h4 style="color: #A7A7A7;">
-        ул. Ивана Пуля 2,<br/>
-        Киев, 84936<br/>
-        3 этаж, 10 офис
+        м. Лукьяновка,<br/>
+        ул. Герцена,<br/>
+        дом 17-25,<br/>
+        3 этаж, офис 95
         </h4>
-        <h2 style="color: #76B55D;">407.296.4100</h2>
     </div>
 </section>

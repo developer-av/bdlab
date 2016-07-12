@@ -31,6 +31,13 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'about' => 'about/default/index',
+                'services' => 'site/services',
+                'services/<id:\d+>' => 'site/service-inner',
+                'clients' => 'clients/default/index',
+                'blog' => 'blog/default/index',
+                'blog/<id:\d+>' => 'blog/default/view',
+                'contact' => 'about/default/contact',
             ],
         ],
     ],
