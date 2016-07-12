@@ -8,6 +8,8 @@ use yii\widgets\Pjax;
 /* @var $model common\models\User */
 
 $this->title = 'Зарегистрировать модератора';
+$this->params['breadcrumbs'][] = ['label' => 'Модераторы', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 
 $this->registerJs(
         '$("document").ready(function(){
@@ -30,8 +32,6 @@ if (!$model->isNewRecord) {
 }
 ?>
 <div class="user-create">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

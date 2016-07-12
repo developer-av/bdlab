@@ -42,6 +42,7 @@ return [
     'modules' => [
         'feedback' => [
             'class' => 'developerav\comments\Module',
+            'viewPath' => '@app/views/comments',
         ],
         'clients' => [
             'class' => 'common\modules\clients\backend\Module',
@@ -51,6 +52,7 @@ return [
         ],
         'blog' => [
             'class' => 'developerav\blog\backend\Module',
+            'viewPath' => '@app/views/blog',
         ],
         'users' => [
             'class' => 'mdm\admin\Module',

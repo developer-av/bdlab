@@ -48,6 +48,8 @@ class ModeratorsController extends Controller {
             throw new BadRequestHttpException($e->getMessage());
         }
 
+        $this->layout = 'main-login';
+
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
             Yii::$app->session->setFlash('success', 'Вы успешно активировали свой аккаунт');
             return $this->goHome();

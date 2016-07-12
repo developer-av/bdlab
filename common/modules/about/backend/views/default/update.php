@@ -12,8 +12,6 @@ $this->params['breadcrumbs'][] = 'Изменить';
 ?>
 <div class="about-update">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <div class="text-center"><?= Html::img(\Yii::getAlias('@web/' . \Yii::$app->controller->module->path) . $model->photo, ['class' => 'img-circle']) ?></div>
 
     <?=

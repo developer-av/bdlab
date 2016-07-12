@@ -12,8 +12,6 @@ $this->params['breadcrumbs'][] = 'Обновление';
 ?>
 <div class="services-update">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <div class="text-center"><?= Html::img(\Yii::getAlias('@web/upload/services/') . $model->photo, ['class' => 'img-circle']) ?></div>
 
     <?= $this->render('_form', [

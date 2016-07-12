@@ -137,10 +137,12 @@ class m140506_102106_rbac_init extends \yii\db\Migration {
 
         $auth = Yii::$app->authManager;
 
+        $guest = $auth->createRole('Guest');
         $dev = $auth->createRole('Dev');
         $admin = $auth->createRole('Admin');
         $moderator = $auth->createRole('Moderator');
 
+        $auth->add($guest);
         $auth->add($admin);
         $auth->add($moderator);
         $auth->add($dev);
@@ -157,17 +159,28 @@ class m140506_102106_rbac_init extends \yii\db\Migration {
             '/elfinder/*',
             '/slider/*',
         ];
+        $guestRoutes = [
+            '/site/*',
+            '/moderators/activate',
+        ];
 
+        foreach ($guestRoutes as $guestRoute) {
+            $route = $auth->createPermission($guestRoute);
+            $auth->add($route);
+            $auth->addChild($guest, $route);
+        }
         foreach ($moderatorRoutes as $moderatorRoute) {
             $route = $auth->createPermission($moderatorRoute);
             $auth->add($route);
             $auth->addChild($moderator, $route);
         }
 
-        $auth->addChild($admin, $moderator);
         $adminRoute = $auth->createPermission('/moderators/*');
         $auth->add($adminRoute);
         $auth->addChild($admin, $adminRoute);
+        $auth->addChild($admin, $moderator);
+        $auth->addChild($dev, $admin);
+        $auth->addChild($moderator, $guest);
 
         $auth->assign($dev, $id);
     }
