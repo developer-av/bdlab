@@ -8,7 +8,7 @@ use yii\helpers\Html;
 
 <header class="main-header">
 
-<?= Html::a('<span class="logo-mini">ЛРБ</span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
+    <?= Html::a('<span class="logo-mini">ЛРБ</span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
     <nav class="navbar navbar-static-top" role="navigation">
 
@@ -19,10 +19,17 @@ use yii\helpers\Html;
         <div class="navbar-custom-menu">
 
             <ul class="nav navbar-nav">
+                <li class="user user-menu">
+                        <?=
+                        Html::a(
+                                \Yii::$app->user->identity->username, ['/profile/index']
+                        )
+                        ?>
+                </li>
                 <li>
                     <?=
                     Html::a(
-                            'Sign out', ['/site/logout'], ['data-method' => 'post']
+                            '<i class="fa fa-sign-out"></i>', ['/site/logout'], ['data-method' => 'post']
                     )
                     ?>
                 </li>
