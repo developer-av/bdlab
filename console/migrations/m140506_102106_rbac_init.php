@@ -159,6 +159,7 @@ class m140506_102106_rbac_init extends \yii\db\Migration {
             '/elfinder/*',
             '/slider/*',
             '/profile/*',
+            '/services/*',
         ];
         $guestRoutes = [
             '/site/*',
